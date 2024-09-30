@@ -679,19 +679,21 @@ h1{
 
         header{
             padding: 1.5rem 0;
-            display: flex;
-           flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
                  
         }
 
       
-         nav{
-           display: flex;
-           justify-content: center;
-           
-
+        
+        header h1, p{
+            grid-column: 2 / span 1;
+            
         }
 
+        header p{
+            text-align: left;
+        }
 
 /*
   nav{
