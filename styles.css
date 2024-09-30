@@ -752,6 +752,7 @@ nav ul li {
 #intro {
     display: grid; /* Enable flexbox */
     grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
 
 }
 
