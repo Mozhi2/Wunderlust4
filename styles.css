@@ -679,14 +679,15 @@ h1{
 
         header{
             padding: 1.5rem 0;
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            display: flex;
+           flex-wrap: wrap;
                  
         }
 
       
-        header nav{
-            grid-column: 3 / span 3;
+         nav{
+           display: flex;
+           justify-content: center;
            
 
         }
