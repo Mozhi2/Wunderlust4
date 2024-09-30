@@ -711,6 +711,14 @@ p{
     display: grid;
 }
 
+header h1{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header p{
+    grid-column: 1 / span 1;
+}
 
 
 /* Optional: Adjust navigation styles */
