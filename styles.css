@@ -703,6 +703,7 @@ header {
 }
 
 h1, p {
+    display:grid;
     margin: 0; /* Remove default margins */
 }
 
@@ -739,19 +740,19 @@ nav ul li {
   
 */
 #intro {
-    display: flex; /* Enable flexbox */
+    display: flex;
     align-items: center; /* Center items vertically */
 }
 
-#intro > div {
-    display: flex; /* Enable flexbox for img-grid */
-    justify-content: center; /* Center images */
-    flex: 1; /* Allow img-grid to take up space */
+#intro > h2, #intro > p {
+    flex: 1; /* Allow h2 and p to take up available space */
+    margin: 0; /* Remove default margins */
 }
 
-#intro h2, #intro p {
-    flex: 1; /* Allow h2 and p to take up space */
-    margin: 0; /* Remove default margins */
+#img-grid {
+    display: flex; /* Keep images in a row */
+    justify-content: center; /* Center images within the grid */
+    flex: 1; /* Allow img-grid to take up available space */
 }
 /*
 
@@ -915,6 +916,9 @@ nav ul li {
             grid-template-columns: repeat(3, 1fr);
             align-items: left;
            
+        }
+        footer a{
+            text-align: right;
         }
 
     }
