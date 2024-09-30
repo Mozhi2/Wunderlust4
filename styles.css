@@ -764,15 +764,41 @@ nav ul li {
 }
 
 #intro > div {
-    display: flex; /* Flexbox for img-grid */
-    flex-direction: column; /* Stack images vertically */
-    justify-content: center; /* Center images vertically */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    grid-template-rows: auto auto;
+    /* Two rows */
+    gap: 15px;
+    /* Optional spacing between images */
+    justify-content: center;
 }
 
-#intro h2, 
-#intro p {
-    flex: none; /* Keep h2 and p from growing */
+
+#intro > div > img {
+    width: 100%;
+    /* Makes images responsive */
+    height: auto;
+    /* Maintains aspect ratio */
+    align-items: center;
 }
+
+/* Place the third image to span the entire row */
+#intro > div > picture {
+    grid-column: 1 / span 2;
+    /* Span across both columns */
+}
+
+/*
+#intro{
+display: grid;
+    }
+
+    #intro div{
+    display grid;
+
+
+*/
 /*
 
    #intro{
@@ -803,17 +829,6 @@ nav ul li {
    /*------img-grid image cordination------*/
 
 
-   #img-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Two columns */
-    grid-template-rows: auto auto;
-    /* Two rows */
-    gap: 15px;
-    /* Optional spacing between images */
-    justify-content: center;
-
-}
 
 #img-grid img {
     width: 100%;
