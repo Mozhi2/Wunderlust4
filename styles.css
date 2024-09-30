@@ -702,9 +702,13 @@ header {
     margin-right: 20px; /* Space between logo and text */
 }
 
-h1, p {
+h1{
     display:grid;
     margin: 0; /* Remove default margins */
+}
+
+p{
+    display: grid;
 }
 
 
@@ -740,19 +744,23 @@ nav ul li {
   
 */
 #intro {
-    display: flex;
-    align-items: center; /* Center items vertically */
+    display: flex; /* Enable flexbox */
 }
 
-#intro > h2, #intro > p {
-    flex: 1; /* Allow h2 and p to take up available space */
+#intro > h2,
+#intro > p {
     margin: 0; /* Remove default margins */
 }
 
-#img-grid {
-    display: flex; /* Keep images in a row */
-    justify-content: center; /* Center images within the grid */
-    flex: 1; /* Allow img-grid to take up available space */
+#intro > div {
+    display: flex; /* Flexbox for img-grid */
+    flex-direction: column; /* Stack images vertically */
+    justify-content: center; /* Center images vertically */
+}
+
+#intro h2, 
+#intro p {
+    flex: none; /* Keep h2 and p from growing */
 }
 /*
 
