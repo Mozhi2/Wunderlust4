@@ -695,7 +695,7 @@ h1{
             text-align: left;
         }
 
-/*
+
   nav{
     display: flex;
     justify-content: flex-end;
@@ -713,7 +713,7 @@ h1{
     justify-content: space-evenly;
    }
        
-  */
+  
 
   #menu-toggle label{
     display: none;
