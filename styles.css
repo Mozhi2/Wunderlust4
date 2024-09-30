@@ -670,39 +670,6 @@ h1{
 
 
     @media screen and (min-width: 1200px){
-
-
-header {
-    display: flex;                  /* Enable flexbox layout */
-    justify-content: space-between; /* Space columns evenly */
-    align-items: center;           /* Center items vertically */
-    padding: 10px 20px;            /* Add some padding */
-}
-
-#logo {
-    flex: 1;                       /* Logo takes one column */
-}
-
-h1, p {
-    flex: 2;                       /* h1 and p take two columns */
-    margin: 0;                    /* Remove default margins */
-}
-
-nav {
-    flex: 1;                       /* Navigation takes one column */
-}
-
-/* Optional styles for better appearance */
-nav ul {
-    list-style: none;             /* Remove bullet points */
-    padding: 0;                  /* Remove padding */
-    margin: 0;                   /* Remove margin */
-}
-
-nav li {
-    display: inline;              /* Display list items inline */
-    margin-left: 15px;           /* Space between items */
-}
         /*
 
         header{
@@ -724,7 +691,7 @@ nav li {
         }
 
 */
-/*
+
 header {
     display: flex;
     justify-content: space-between;
@@ -733,19 +700,17 @@ header {
 
 #logo {
     margin-right: 20px; /* Space between logo and text */
-    /*
 }
 
 h1, p {
     margin: 0; /* Remove default margins */
-    /*
 }
 
+
+
 /* Optional: Adjust navigation styles */
-/*
 nav {
     margin-left: auto; /* Pushes the nav to the right */
-    /*
 }
 
 nav ul {
@@ -756,10 +721,7 @@ nav ul {
 
 nav ul li {
     margin-left: 20px; /* Space between navigation items */
-    /*
-    
-    }
-
+}
 
 
 /*   
@@ -776,15 +738,30 @@ nav ul li {
    }
   
 */
-  #menu-toggle label{
-    display: none;
-  }
+#intro {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+#intro > div {
+    display: flex; /* Enable flexbox for img-grid */
+    justify-content: center; /* Center images */
+    flex: 1; /* Allow img-grid to take up space */
+}
+
+#intro h2, #intro p {
+    flex: 1; /* Allow h2 and p to take up space */
+    margin: 0; /* Remove default margins */
+}
+/*
 
    #intro{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
    }
+
+
 
 
    #intro h2{
@@ -800,7 +777,7 @@ nav ul li {
     text-align: left;
    }
 
-
+*/
 
    
    /*------img-grid image cordination------*/
