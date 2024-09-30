@@ -713,6 +713,10 @@ h1{
        
   */
 
+  #menu-toggle label{
+    display: none;
+  }
+
    #intro{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
