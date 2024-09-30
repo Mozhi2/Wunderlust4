@@ -679,11 +679,18 @@ h1{
 
         header{
             padding: 1.5rem 0;
-            display: flex;
-            
-            
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+                 
         }
 
+      
+        header nav{
+            grid-column: 3 / span 3;
+           
+
+        }
+*/
 
 /*
   nav{
