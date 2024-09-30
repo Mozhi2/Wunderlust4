@@ -680,14 +680,8 @@ h1{
         header{
             padding: 1.5rem 0;
             display: flex;
-            flex-wrap: wrap;
             
-        }
-
-        header nav{
-            grid-column: 3 / span 3;
-           
-
+            
         }
 
 
