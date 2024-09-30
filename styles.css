@@ -255,7 +255,7 @@ table {
 #email,
 #phone,
 .required:focus {
-    border: 2px inset var(--light-gray);
+    border: 2px inset var(--purple);
 	box-shadow: 0 0 0 0.09em currentColor;
 }
 
@@ -286,14 +286,8 @@ table {
 }
 
 
-input:focus, select:focus{
-
-        border: 2px inset var(--purple);
-        box-shadow: 0 0 0 0.09em currentColor;
-    }
-
     input[type=text]:focus{
-        outline: 2px solid var(--purple);     /* oranges! yey */
+        outline: 2px solid var(--purple);     
       }
 
 
@@ -310,7 +304,7 @@ input[type="radio"] {
     width: 1em;
     height: 1em;
     border: 0.15em solid currentColor;
-    border-radius: 40%;
+    border-radius: 50%;
     display: grid;
     place-content: center;
 }
@@ -321,7 +315,7 @@ input[type="radio"]::before {
     content: "";
     width: 0.65em;
     height: 0.65em;
-    border-radius: 40%;
+    border-radius: 50%;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em var(--form-control-color);
@@ -676,6 +670,39 @@ h1{
 
 
     @media screen and (min-width: 1200px){
+
+
+header {
+    display: flex;                  /* Enable flexbox layout */
+    justify-content: space-between; /* Space columns evenly */
+    align-items: center;           /* Center items vertically */
+    padding: 10px 20px;            /* Add some padding */
+}
+
+#logo {
+    flex: 1;                       /* Logo takes one column */
+}
+
+h1, p {
+    flex: 2;                       /* h1 and p take two columns */
+    margin: 0;                    /* Remove default margins */
+}
+
+nav {
+    flex: 1;                       /* Navigation takes one column */
+}
+
+/* Optional styles for better appearance */
+nav ul {
+    list-style: none;             /* Remove bullet points */
+    padding: 0;                  /* Remove padding */
+    margin: 0;                   /* Remove margin */
+}
+
+nav li {
+    display: inline;              /* Display list items inline */
+    margin-left: 15px;           /* Space between items */
+}
         /*
 
         header{
@@ -697,7 +724,7 @@ h1{
         }
 
 */
-
+/*
 header {
     display: flex;
     justify-content: space-between;
@@ -706,15 +733,19 @@ header {
 
 #logo {
     margin-right: 20px; /* Space between logo and text */
+    /*
 }
 
 h1, p {
     margin: 0; /* Remove default margins */
+    /*
 }
 
 /* Optional: Adjust navigation styles */
+/*
 nav {
     margin-left: auto; /* Pushes the nav to the right */
+    /*
 }
 
 nav ul {
@@ -725,7 +756,10 @@ nav ul {
 
 nav ul li {
     margin-left: 20px; /* Space between navigation items */
-}
+    /*
+    
+    }
+
 
 
 /*   
