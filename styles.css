@@ -671,24 +671,24 @@ h1{
 
     @media screen and (min-width: 1200px){
 
-
-
         header {
             display: flex;
-            justify-content: space-between; /* Space between the columns */
-            align-items: center; /* Center items vertically */
-        }
-        
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Center items vertically */}
+
         #logo {
-            flex: 0 0 auto; /* Prevent logo from growing */
+            margin-left: auto; /* Push logo to the right */
         }
         
         h1, p {
             margin: 0; /* Remove default margins */
+            text-align: center; /* Center text */
         }
         
         nav {
-            flex: 0 0 auto; /* Prevent nav from growing */
+            display: flex; /* Use flexbox for navigation */
+            justify-content: flex-end; /* Align nav items to the right */
+            margin-left: auto; /* Push nav to the right */
         }
         
         /* Optional: Style for the nav items */
@@ -696,10 +696,10 @@ h1{
             list-style: none; /* Remove bullets */
             padding: 0; /* Remove padding */
             margin: 0; /* Remove margin */
+            display: flex; /* Display items inline */
         }
         
         nav li {
-            display: inline; /* Display items inline */
             margin-right: 15px; /* Space between items */
         }
         /*
@@ -786,7 +786,7 @@ nav ul li {
 */
 #intro {
     display: grid; /* Enable flexbox */
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     align-content: center;
     width: 70%;
     height: 70%;
@@ -794,18 +794,18 @@ nav ul li {
 }
 
 #intro h2{
-    grid-column: 1 / span 2;
+    grid-column: 2 / span 2;
     text-align: left;
     
 }
 
 #intro p{
-    grid-column: 1 / span 2;
+    grid-column: 2 / span 2;
 
 }
 
 #img-grid{
-    grid-column: 4/ span 2;
+    grid-column: 5/ span 2;
 
 }
 
