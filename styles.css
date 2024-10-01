@@ -682,21 +682,24 @@ header{
 header h1{
     grid-column: 2 / span 1;
     text-align: left;
+    /*
     margin-right: auto;
-   
+   */
 }
 
 header p{
     grid-column: 2 / span 1;
     text-align: left;
+    /*
     margin-right: auto;
+    */
 }
 
 
 
 header nav{
     grid-column: 3 / span 1;
-        display: flex; /* Use flexbox for navigation */
+ /* Use flexbox for navigation */
         justify-content: center; /* Align nav items to the right */
         
     }
