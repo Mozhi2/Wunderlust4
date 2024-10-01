@@ -674,17 +674,20 @@ h1{
 header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
 
 }
 
 header h1{
     grid-column: 2 / span 1;
+    text-align: left;
     margin: 0;
     padding: 0;
 }
 
 header p{
     grid-column: 2 / span 1;
+    text-align: left;
     margin: 0;
     padding: 0;
 }
@@ -838,14 +841,15 @@ nav ul li {
 #intro h2{
     grid-column: 2 / span 3;
     text-align: left;
-    padding: 1.5rem;
+   
+    
     
 }
 
 #intro p{
     grid-column: 2 / span 3;
     text-align: left;
-    padding: 1.5rem;
+    padding: 2rem;
 
 }
 
