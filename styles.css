@@ -746,6 +746,7 @@ nav ul li {
 #intro {
     display: grid; /* Enable flexbox */
     grid-template-columns: repeat(3, 1fr);
+    margin: 2rem auto;
     width: 70%;
     height: 70%;
 
