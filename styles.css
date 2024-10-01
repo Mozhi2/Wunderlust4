@@ -786,25 +786,26 @@ nav ul li {
 */
 #intro {
     display: grid; /* Enable flexbox */
-    grid-template-columns: repeat(4, 1fr);
-   align-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
     width: 70%;
     height: 70%;
 
 }
 
 #intro h2{
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 2;
+    text-align: left;
     
 }
 
 #intro p{
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 2;
 
 }
 
 #img-grid{
-    grid-column: 3/ span 2;
+    grid-column: 4/ span 2;
 
 }
 
