@@ -704,7 +704,8 @@ header {
 
 header h1{
     display:grid;
-    margin: 0; /* Remove default margins */
+    margin: 1rem; /* Remove default margins */
+    text-align: center;
 }
 
 header p{
