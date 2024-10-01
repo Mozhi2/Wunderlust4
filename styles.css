@@ -670,6 +670,38 @@ h1{
 
 
     @media screen and (min-width: 1200px){
+
+
+
+        header {
+            display: flex;
+            justify-content: space-between; /* Space between the columns */
+            align-items: center; /* Center items vertically */
+        }
+        
+        #logo {
+            flex: 0 0 auto; /* Prevent logo from growing */
+        }
+        
+        h1, p {
+            margin: 0; /* Remove default margins */
+        }
+        
+        nav {
+            flex: 0 0 auto; /* Prevent nav from growing */
+        }
+        
+        /* Optional: Style for the nav items */
+        nav ul {
+            list-style: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+        
+        nav li {
+            display: inline; /* Display items inline */
+            margin-right: 15px; /* Space between items */
+        }
         /*
 
         header{
@@ -691,6 +723,7 @@ h1{
         }
 
 */
+/*8888888888888
 
 header {
     display: flex;
@@ -700,11 +733,13 @@ header {
 
 #logo {
     margin-right: 20px; /* Space between logo and text */
+    /*
 }
 
 header h1{
     flex-direction: column;
     margin: 1rem; /* Remove default margins */
+    /*
     text-align: center;
 }
 
@@ -715,8 +750,10 @@ header p{
 
 
 /* Optional: Adjust navigation styles */
+/*
 nav {
     margin-left: auto; /* Pushes the nav to the right */
+    /*
 }
 
 nav ul {
@@ -724,10 +761,13 @@ nav ul {
     padding: 0;
     display: flex;
 }
+/*
 
 nav ul li {
     margin-left: 20px; /* Space between navigation items */
+    /*
 }
+
 
 
 /*   
