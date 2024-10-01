@@ -704,39 +704,39 @@ header nav{
         margin-right: 15px; /* Space between items */
     }
 
-        
+        /*
 
         header {
             padding: 1.5rem 0;
             display: flex;
-            justify-content: space-between; /* Space between items */
-            align-items: center; /* Center items vertically */}
+            justify-content: space-between; 
+            align-items: center; }
 
         #logo {
-            margin-left: auto; /* Push logo to the right */
+            margin-left: auto; 
         }
         
         h1, p {
-            margin: 0; /* Remove default margins */
-            text-align: center; /* Center text */
+            margin: 0; 
+            text-align: center; 
         }
         
         nav {
-            display: flex; /* Use flexbox for navigation */
-            justify-content: flex-end; /* Align nav items to the right */
-            margin-left: auto; /* Push nav to the right */
+            display: flex; 
+            justify-content: flex-end; 
+            margin-left: auto; 
         }
         
-        /* Optional: Style for the nav items */
+       
         nav ul {
-            list-style: none; /* Remove bullets */
-            padding: 0; /* Remove padding */
-            margin: 0; /* Remove margin */
-            display: flex; /* Display items inline */
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+            display: flex; 
         }
         
         nav li {
-            margin-right: 15px; /* Space between items */
+            margin-right: 15px; 
         }
         /*
 
