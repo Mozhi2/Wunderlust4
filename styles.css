@@ -671,6 +671,38 @@ h1{
 
     @media screen and (min-width: 1200px){
 
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+header h1{
+    grid-column: 2 / span 1;
+}
+
+header p{
+    grid-column: 2 / span 1;
+}
+
+header nav{
+    
+        display: flex; /* Use flexbox for navigation */
+        justify-content: flex-end; /* Align nav items to the right */
+        margin-left: auto; /* Push nav to the right */
+    }
+    
+    /* Optional: Style for the nav items */
+    nav ul {
+        list-style: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+        display: flex; /* Display items inline */
+    }
+    
+    nav li {
+        margin-right: 15px; /* Space between items */
+    }
 
         
 
