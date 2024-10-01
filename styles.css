@@ -867,6 +867,7 @@ nav ul li {
     gap: 15px;
     /* Optional spacing between images */
     justify-content: center;
+    margin-left: 1rem;
 }
 
 
