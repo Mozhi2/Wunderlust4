@@ -703,13 +703,13 @@ header {
 }
 
 header h1{
-    display:grid;
+    flex-direction: column;
     margin: 1rem; /* Remove default margins */
     text-align: center;
 }
 
 header p{
-    display: grid;
+    flex-direction: column;
 }
 
 
