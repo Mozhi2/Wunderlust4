@@ -670,7 +670,46 @@ h1{
 
 
     @media screen and (min-width: 1200px){
+
+        header{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav {
+            margin-left: auto; /* Pushes the nav to the right */
+            
+        }
         
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        
+        
+        nav ul li {
+            margin-left: 20px; /* Space between navigation items */
+            
+        }
+        
+        
+        
+          
+           nav a{
+            text-decoration:none;
+            text-align: center;
+            padding: 1rem;
+            margin: 1rem 0;
+            background-color: var(--yellow);
+            color: var(--black);
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 0.25rem;
+           }
+          
+        
+      /*  
 
 header{
     display: grid;
@@ -685,6 +724,7 @@ header h1{
     /*
     margin-right: auto;
    */
+   /*
 }
 
 header p{
@@ -693,6 +733,7 @@ header p{
     /*
     margin-right: auto;
     */
+    /*
 }
 
 
@@ -700,20 +741,29 @@ header p{
 header nav{
     grid-column: 3 / span 1;
  /* Use flexbox for navigation */
+ /*
         justify-content: center; /* Align nav items to the right */
+        /*
         
     }
     
     /* Optional: Style for the nav items */
+    /*
     nav ul {
         list-style: none; /* Remove bullets */
+        /*
         padding: 0; /* Remove padding */
+        /*
         margin: 0; /* Remove margin */
+        /*
         display: flex; /* Display items inline */
+        /*
+        
     }
     
     nav li {
         margin-right: 15px; /* Space between items */
+        /*
     }
 
         /*
@@ -832,7 +882,7 @@ nav ul li {
    }
   
 */
-#intro {
+#intro{
     display: grid; /* Enable flexbox */
     grid-template-columns: repeat(6, 1fr);
     align-content: center;
